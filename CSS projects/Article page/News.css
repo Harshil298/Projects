@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Tilt Neon", cursive;
+  width: 100%;
+  background-color: rgb(233, 241, 242);
+}
+.main {
+  width: 100%;
+  padding: 0px 150px;
+}
+.main .content {
+  /* border: 1px solid black; */
+  display: flex;
+  height: 250px;
+}
+.main .content .c1,
+.c2 {
+  /* border: 1px solid black; */
+  display: inline;
+  padding: 45px;
+}
+.main .content .c1 {
+  background-position: center;
+  background-size: cover;
+  background-image: radial-gradient(
+    rgba(255, 139, 69, 0.7),
+    rgba(139, 153, 199, 0.5)
+  ),url(pic1.jpg);
+}
+.main .content .c2 {
+  background-image: radial-gradient(
+    rgba(69,139,255,0.7),
+    rgba(199,153,139,0.5)
+  ),url(pic2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.main .content .c1 p {
+  margin-top: 20px;
+}
+.main .content .c1 button {
+  padding: 8px 15px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: transparent;
+  border: 2px solid black;
+  font-weight: bold;
+}
+.main .content .c1 button:hover {
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.main .content .c1 button:active{
+  transform: translateY(3px);
+}
+.main .content .c2 p {
+  margin-top: 20px;
+}
+.main .content .c2 button {
+  padding: 8px 15px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: transparent;
+  border: 2px solid black;
+  font-weight: bold;
+}
+.main .content .c2 button:hover {
+  cursor: pointer;
+  transition:0.5s ease;
+}
+.main .content .c2 button:active{
+  transform: translateY(3px);
+}
+.section {
+  /*  border: 1px solid black; */
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+.section .s1 {
+  position: relative;
+  top: 40%;
+}
+.section .line {
+  border: 3px solid rgb(2, 231, 132);
+  width: 60px;
+  position: relative;
+  left: 48%;
+  top: 15px;
+  border-radius: 30px;
+}
+.footer {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 250px;
+}
+.footer .tag {
+  /* border: 1ox solid black; */
+  display: flex;
+  margin: 0px 350px;
+}
+.footer .tag .t1,
+.t2,
+.t3 {
+  /* border: 1px solid black; */
+  width: 450px;
+  height: 250px;
+  margin: 0px 10px;
+  padding: 25px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.footer .tag .t1 .date {
+  font-size: smaller;
+  color: rgb(2, 231, 132);
+  font-weight: bolder;
+}
+.footer .tag .t1 h4 {
+  margin-top: 10px;
+}
+.footer .tag .t1 p {
+  margin-top: 10px;
+  color: gray;
+}
+.footer .tag .t1 button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: rgb(2, 231, 132);
+  color: rgb(2, 231, 132);
+  background: whitesmoke;
+  font-weight: bolder;
+}
+.footer .tag .t1 button:hover {
+  cursor: pointer;
+  background: rgb(2, 231, 132);
+  color: whitesmoke;
+}
+.footer .tag .t2 .date {
+  font-size: smaller;
+  color: rgb(2, 231, 132);
+  font-weight: bolder;
+}
+.footer .tag .t2 h4 {
+  margin-top: 10px;
+}
+.footer .tag .t2 p {
+  margin-top: 10px;
+  color: gray;
+}
+.footer .tag .t2 button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: rgb(2, 231, 132);
+  color: rgb(2, 231, 132);
+  background: whitesmoke;
+  font-weight: bolder;
+}
+.footer .tag .t2 button:hover {
+  cursor: pointer;
+  background: rgb(2, 231, 132);
+  color: whitesmoke;
+}
+.footer .tag .t3 .date {
+  font-size: smaller;
+  color: rgb(2, 231, 132);
+  font-weight: bolder;
+}
+.footer .tag .t3 h4 {
+  margin-top: 10px;
+}
+.footer .tag .t3 p {
+  margin-top: 10px;
+  color: gray;
+}
+.footer .tag .t3 button {
+  padding: 8px 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: rgb(2, 231, 132);
+  color: rgb(2, 231, 132);
+  background: whitesmoke;
+  font-weight: bolder;
+}
+.footer .tag .t3 button:hover {
+  cursor: pointer;
+  background: rgb(2, 231, 132);
+  color: whitesmoke;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern CRUD App</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+    }
+
+    #app {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .btn {
+      cursor: pointer;
+      padding: 8px;
+      margin-right: 5px;
+    }
+
+    .btn-primary {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+    }
+
+    .btn-warning {
+      background-color: #f0ad4e;
+      color: white;
+      border: none;
+    }
+
+    .btn-danger {
+      background-color: #d9534f;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app">
+    <h1 class="mt-4 mb-3">Modern CRUD App</h1>
+
+    <input type="text" id="searchInput" placeholder="Search..." oninput="handleSearch()">
+    
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Table rows will be dynamically added here -->
+      </tbody>
+    </table>
+
+    <button class="btn btn-primary" onclick="addItem()">Add Item</button>
+  </div>
+
+  <script>
+    // Sample data
+    const items = [
+      { id: 1, name: 'John Doe', email: 'john@example.com' },
+      { id: 2, name: 'Jane Smith', email: 'jane@example.com' },
+      // Add more items as needed
+    ];
+
+    // Function to render items in the table
+    function renderItems(filteredItems) {
+      const tableBody = document.getElementById('tableBody');
+      tableBody.innerHTML = '';
+
+      filteredItems.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.id}</td>
+          <td>${item.name}</td>
+          <td>${item.email}</td>
+          <td>
+            <button class="btn btn-warning" onclick="editItem(${item.id})">Edit</button>
+            <button class="btn btn-danger" onclick="deleteItem(${item.id})">Delete</button>
+          </td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
+
+    // Function to handle search
+    function handleSearch() {
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+      const filteredItems = items.filter(item =>
+        item.name.toLowerCase().includes(searchTerm) ||
+        item.email.toLowerCase().includes(searchTerm)
+      );
+      renderItems(filteredItems);
+    }
+
+    // Placeholder functions for CRUD operations
+    function addItem() {
+      // Implement logic to add a new item
+      console.log('Adding a new item');
+    }
+
+    function editItem(itemId) {
+      // Implement logic to edit an existing item
+      console.log('Editing item with ID:', itemId);
+    }
+
+    function deleteItem(itemId) {
+      // Implement logic to delete an item
+      console.log('Deleting item with ID:', itemId);
+    }
+
+    // Initial render
+    renderItems(items);
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <style>
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        fieldset{
+            width: 40%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin: 5px 0px 5px 0px;
+        }
+        tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        input,select{
+            margin: 5px 0px 5px 0px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <form action="#">
+            <table>
+                <tr>
+                    <td colspan="2"><h1>BASCOMMail.Com</h1></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h2>Sign Up with your New Account</h2></td>
+                </tr>
+                <tr>
+                    <td><label for="name">*Name</label></td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td><label for="id">*Enter Your ID</label></td>
+                    <td><input type="number" name="id" id="id" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">*Enter Your Password</label></td>
+                    <td><input type="password" name="pass" id="pass" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">*Confirm Your Password</label></td>
+                    <td><input type="password" name="pass" id="pass" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">*Alternate E-Mail Address</label></td>
+                    <td><input type="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date">*Date of Birth</label></td>
+                    <td><input type="datetime" name="date" id="date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">*Gender</label></td>
+                    <td><input type="radio" name="gender" id="male"><label for="male">Male</label>
+                        <input type="radio" name="gender" id="female"><label for="female">Female</label></td>
+                </tr>
+                <tr>
+                    <td><label for="country">*Country</label></td>
+                    <td><select name="country" id="country">
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Field marked with (*) are compulsory.</p><br>
+                        <p>This information is must for successful account creation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox"><label for="text">I agree to the <a href="#">terms and conditions</a> and the <a href="#">privacy policy</a>.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Register Me">
+                        <input type="button" value="Reset">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Copyright © 2014 BASCOMMail.com India Limited.</h3><br>
+                        <h3>All rights reserved.</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h2><a href="#">Disclaimer</a>|<a href="#">Privacy Policy</a></h2>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

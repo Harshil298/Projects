@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(65, 66, 65);
+}
+.header .logo{
+    position: relative;
+    right: 350px;
+    top: 20px;
+    color: aliceblue;
+}
+.header .navbar{
+    position: relative;
+    top: 30px;
+}
+.header .navbar ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+    left: 375px;
+}
+.header .navbar ul li{
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 30px;
+}
+.header .navbar ul li a{
+    color: rgb(14, 128, 14);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 30px;
+}
+.header .navbar ul li .bb{
+    color: aliceblue;
+}
+.header .navbar ul li .bb:hover{
+    color: rgb(65, 66, 65);
+    background-color: aliceblue;
+}
+.header .navbar ul li a:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.3);
+    color: aliceblue;
+}
+.main{
+    width: 100%;
+    margin-top: 75px;
+}
+.main .first{
+    text-align: center;
+    margin: 30px;
+}
+.main .first .first2{
+    border: 3px solid rgb(14, 128, 14);
+    border-radius: 50px;
+    width: 80px;
+    margin-top: 10px;
+    position: relative;
+    left: 47.5%;
+}
+.main .first .text{
+    font-weight: bold;
+    color: rgb(139, 146, 139) ;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+.content{
+    width: 100%;
+    display:flex;
+    margin-top: 50px;
+}
+.content .tag1, .tag2, .tag3{
+    display: inline;
+    text-align: center;
+}
+.content .tag1 .t1{
+    margin-top: 20px;
+}
+.content .tag1 .t1 h3{
+    font-weight: bolder;
+}
+.content .tag1 .t1 p{
+    color:rgb(139, 146, 139);
+    margin-top: 10px;
+}
+.content .tag2 .t2{
+    margin-top: 20px;
+}
+.content .tag2 .t2 p{
+    color:rgb(139, 146, 139);
+    margin-top: 10px;
+}
+.content .tag2 .t2 h3{
+    font-weight: bolder;
+}
+.content .tag3 .t3{
+    margin-top: 20px;
+}
+.content .tag3 .t3 h3{
+    font-weight: bolder;
+}
+.content .tag3 .t3 p{
+    color:rgb(139, 146, 139);
+    margin-top: 10px;
+}

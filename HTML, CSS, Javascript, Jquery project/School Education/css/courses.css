@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+:root{
+    --color-blue: #0d6efd;
+    --color-indigo: #6610f2;
+    --color-purple: #6f42c1;
+    --color-pink: #d63384;
+    --color-red: #dc3545;
+    --color-orange: #fd7e14;
+    --color-yellow: #ffc107;
+    --color-green: #198754;
+    --color-teal: #20c997;
+    --color-cyan: #0dcaf0;
+    --color-white: #fff;
+    --color-gray: #6c757d;
+    --color-gray-dark: #343a40;
+    --color-primary: #0d6efd;
+    --color-secondary: #6c757d;
+    --color-success: #198754;
+    --color-info: #0dcaf0;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+    --color-light: #f8f9fa;
+    --color-dark: #212529;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color:#49108B;
+    color: white;
+}
+nav{
+    width: 100%;
+    position: relative;
+}
+.window-scroll{
+    background-color: #8d91c0;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    transition: var(--transition);
+}
+nav .container{
+    width: 100%;
+    height: 80px;
+    /* background-color: #AC87C5; */
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0px 175px;
+}
+nav .container h1{
+    color: white;
+}
+nav .container ul{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+nav .container ul li{
+    padding: 8px;
+}
+nav .container ul li a{
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+nav .container ul li a:hover{
+    color: #49108B;
+    background-color: white;
+    border-color: #756AB6;
+}
+nav .container button{
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 1px 2px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+nav .container button:hover{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.courses{
+    margin-top: 7rem;
+    padding: 0px 175px;
+    width: 100%;
+}
+.courses__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+}
+.course{
+    border: 2px solid transparent;
+    text-align: center;
+    background-color: #7E30E1;
+    transition: var(--transition);
+    width: 365px;
+    height: 575px;
+}
+.course:hover{
+    background-color: transparent;
+    border: 2px solid #7E30E1;
+}
+.course .course__img img{
+    width: 100%;
+}
+.course .course__info{
+    padding: 2rem;
+    margin-top: 1rem;
+}
+.course h4{
+    font-size: larger;
+}
+.course p{
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+.course .course__info a{
+    padding: 15px 50px;
+    font-size: 1rem;
+    background-color: #ef3d22;
+    color: white;
+    border: transparent;
+    outline: transparent;
+    margin-top: 35px;
+    transition: var(--transition);
+    margin-top: 2rem;
+}
+.course .course__info a:hover{
+    background-color: transparent;
+    outline: 2px solid white;
+}
+
+footer{
+    background-color: #7E30E1;
+    padding-top: 5rem;
+    padding: 0px 175px;
+    width: 100%;
+    font-size: 0.9rem;
+
+}
+.footer__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    padding-top: 5rem;
+}
+.footer__container > div h2{
+    margin-bottom: 1.2rem;
+}
+.footer__logo{
+    color: white;
+}
+.footer__1 p{
+    margin: 2rem 0 2rem;
+    font-weight: 500;
+}
+.footer__2 ul li{
+    margin: 2.6rem 0  0.7rem;
+}
+.footer__2 ul li a{
+    color: white;
+    font-weight: 500;
+}
+.footer__3 ul li{
+    margin: 2.6rem 0  0.7rem;
+}
+.footer__3 ul li a{
+    color: white;
+    font-weight: 500;
+}
+.footer__4 .p{
+    margin: 2.6rem 0  10px;
+    font-weight: 500;
+}
+.footer__4 ul li a{
+    color: white;
+    font-weight: 500;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+.footer__socials {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+.footer__copyright{
+    width: 100%;
+    height: 100px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+.footer .footer__copyright .heading{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+}

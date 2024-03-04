@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information Form</title>
+    <style>
+        body{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        fieldset{
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 10px 0px 10px 0px;
+        }
+        th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        input,select{
+             margin: 10px 0px 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <form action="#">
+            <table>
+                <tr>
+                    <th colspan="2">
+                        Employee Information Form
+                    </th>
+                </tr>
+                <tr>
+                    <td><label for="ID">EmpID</label></td>
+                    <td><input type="number" name="id" id="id" placeholder="Enter Emp. ID"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name" id="name" placeholder="Enter Emp. Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="number" name="age" id="age" placeholder="Enter Emp. Age"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date Of Join </label></td>
+                    <td><input type="date" name="date" id="date" placeholder="Enter Emp. Date Of Join"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male"><label for="Male">Male</label>
+                        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tel">Mobile No.</label></td>
+                    <td><input type="tel" name="tel" id="tel"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><textarea name="address" id="address" cols="30" rows="10" placeholder="Enter Address"></textarea></td> 
+                </tr>
+                <tr>
+                    <td><label for="city">City</label></td>
+                    <td><select name="city" id="city">
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Aanand">Aanand</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="state">State</label></td>
+                    <td>
+                        <select name="state" id="state">
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="scale">Pay scale</label></td>
+                    <td><input type="number" placeholder="Enter Emp. Pay scale"></td>
+                </tr>
+                <tr>
+                    <td><label for="Qualify">Qualification</label></td>
+                    <td>
+                        <select name="degree" id="study">
+                            <option value="Graduate"></option>
+                            <option value="Master">Master</option>
+                            <option value="PHD">PHD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

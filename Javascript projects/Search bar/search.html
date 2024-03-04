@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search list</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+    
+        #searchInput {
+          padding: 10px;
+          font-size: 16px;
+        }
+    
+        #resultContainer {
+          margin-top: 10px;
+        }
+    
+        .resultItem {
+          margin-bottom: 5px;
+        }
+      </style>
+</head>
+<body>
+    <h1>Search App</h1>
+
+  <input type="text" id="searchInput" placeholder="Search...">
+  <div id="resultContainer"></div>
+
+  <script>
+    // Sample data
+    const data = [
+      'Apple', 'Banana', 'Orange', 'Grapes', 'Mango',
+      'Pineapple', 'Strawberry', 'Watermelon', 'Cherry'
+    ];
+
+    const searchInput = document.getElementById('searchInput');
+    const resultContainer = document.getElementById('resultContainer');
+
+    // Event listener for input changes
+    searchInput.addEventListener('input', handleSearch);
+
+    function handleSearch() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const filteredData = data.filter(item => item.toLowerCase().includes(searchTerm));
+      displayResults(filteredData);
+    }
+
+    function displayResults(results) {
+      resultContainer.innerHTML = ''; // Clear previous results
+
+      if (results.length === 0) {
+        resultContainer.innerHTML = '<p>No results found.</p>';
+        return;
+      }
+
+      results.forEach(result => {
+        const resultItem = document.createElement('div');
+        resultItem.classList.add('resultItem');
+        resultItem.textContent = result;
+        resultContainer.appendChild(resultItem);
+      });
+    }
+  </script>
+</body>
+</html>
